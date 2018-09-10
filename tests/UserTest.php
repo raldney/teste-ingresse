@@ -105,6 +105,19 @@ class UserTest extends TestCase
         ]);
     }
 
+    public function testShowOneUser(){
+        $user = User::first();
+        $this->get('/api/v'.getenv('APP_VERSION').'/users/'. $user->id);
+        $this->assertResponseOk();
+        $this->seeJsonStructure([
+            '*' => [
+                'id',
+                'name',
+                'email'
+            ]
+        ]);
+    }
+
 
 
     public function testDeleteUser(){

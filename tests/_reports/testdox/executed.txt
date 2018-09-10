@@ -3,6 +3,7 @@ User
  [x] Update user without pass
  [x] Update user with pass
  [x] Show all users
+ [x] Show one user
  [x] Delete user
  [x] Show all trashed users
 
