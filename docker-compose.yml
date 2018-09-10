@@ -1,0 +1,50 @@
+version: '3'
+services:
+    web:
+        build: .
+        ports:
+            - "8000:80"
+            - "3000:443"
+        links:
+            - redis
+        environment:
+            - REDIS_URL=redis://cache
+            - MYSQL_HOST=${MYSQL_HOST}
+        volumes:
+            - "./web:/var/www/html"
+        depends_on:
+            - redis
+            - mysqldb
+            - myadmin 
+        command: ["./scripts/wait-for-mysql.sh","--","./scripts/run.sh"]
+    redis:
+        image: redis:alpine
+        ports:
+            - "6379"
+        
+    myadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: phpmyadmin
+        ports:
+            - "8080:80"
+        environment:
+            - PMA_ARBITRARY=1
+            - PMA_HOST=${MYSQL_HOST}
+        restart: always
+        depends_on:
+            - mysqldb
+    mysqldb:
+        image: mysql:${MYSQL_VERSION}
+        container_name: ${MYSQL_HOST}
+        restart: always
+        env_file:
+            - ".env"
+        environment:
+            - MYSQL_DATABASE=${MYSQL_DATABASE}
+            - MYSQL_USER=${MYSQL_ROOT_USER}
+            - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+            - MYSQL_ALLOW_EMPTY_PASSWORD=true
+        ports:
+            - "8989:3306"
+        volumes:
+            - "./data/db/mysql:/var/lib/mysql"
