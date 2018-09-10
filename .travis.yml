@@ -17,13 +17,14 @@ addons:
 before_script:
   - cp .env.travis .env
   - mysql -u root -e 'CREATE DATABASE teste_ingresse;'
+  - cd web/
 
 install: travis_retry composer install --no-interaction --prefer-source
 
 script: 
-  - ./web/artisan migrate
-  - ./web/artisan db:seed
-  - ./web/vendor/bin/phpunit
+  - ./artisan migrate
+  - ./artisan db:seed
+  - vendor/bin/phpunit
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
