@@ -6,7 +6,7 @@ use App\User;
 class UserTest extends TestCase
 {
 
-    use DatabaseTransactions;
+    // use DatabaseTransactions;
 
     /**
      * A create user test.
