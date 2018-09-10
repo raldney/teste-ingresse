@@ -1,0 +1,8 @@
+User
+ [x] Create user
+ [x] Update user without pass
+ [x] Update user with pass
+ [x] Show all users
+ [x] Delete user
+ [x] Show all trashed users
+

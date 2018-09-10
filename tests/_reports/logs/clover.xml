@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1536599509">
+  <project timestamp="1536599509">
+    <package name="App\Console">
+      <file name="/Users/raldney/Projetos/users/app/Console/Kernel.php">
+        <class name="App\Console\Kernel" namespace="App\Console">
+          <metrics complexity="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="29" ncloc="14" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Events">
+      <file name="/Users/raldney/Projetos/users/app/Events/Event.php">
+        <class name="App\Events\Event" namespace="App\Events">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="10" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/Users/raldney/Projetos/users/app/Events/ExampleEvent.php">
+        <class name="App\Events\ExampleEvent" namespace="App\Events">
+          <metrics complexity="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="16" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Exceptions">
+      <file name="/Users/raldney/Projetos/users/app/Exceptions/Handler.php">
+        <class name="App\Exceptions\Handler" namespace="App\Exceptions">
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="34" type="method" name="report" visibility="public" complexity="1" crap="2.00" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="46" type="method" name="render" visibility="public" complexity="1" crap="2.00" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <metrics loc="50" ncloc="30" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Http\Controllers\V1">
+      <file name="/Users/raldney/Projetos/users/app/Http/Controllers/V1/Controller.php">
+        <class name="App\Http\Controllers\V1\Controller" namespace="App\Http\Controllers\V1">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="10" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/Users/raldney/Projetos/users/app/Http/Controllers/V1/UserController.php">
+        <class name="App\Http\Controllers\V1\UserController" namespace="App\Http\Controllers\V1">
+          <metrics complexity="15" methods="7" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="37" coveredstatements="35" elements="44" coveredelements="40"/>
+        </class>
+        <line num="13" type="method" name="showAllUsers" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="14" type="stmt" count="1"/>
+        <line num="15" type="stmt" count="1"/>
+        <line num="16" type="stmt" count="1"/>
+        <line num="19" type="method" name="paginated" visibility="public" complexity="4" crap="4" count="2"/>
+        <line num="20" type="stmt" count="2"/>
+        <line num="21" type="stmt" count="2"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="24" type="stmt" count="2"/>
+        <line num="25" type="stmt" count="2"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="35" type="stmt" count="2"/>
+        <line num="41" type="method" name="showOneUser" visibility="public" complexity="1" crap="2.00" count="0"/>
+        <line num="42" type="stmt" count="0"/>
+        <line num="45" type="method" name="create" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="54" type="stmt" count="1"/>
+        <line num="55" type="stmt" count="1"/>
+        <line num="58" type="stmt" count="1"/>
+        <line num="61" type="method" name="update" visibility="public" complexity="3" crap="3" count="2"/>
+        <line num="63" type="stmt" count="2"/>
+        <line num="65" type="stmt" count="2"/>
+        <line num="69" type="stmt" count="2"/>
+        <line num="70" type="stmt" count="1"/>
+        <line num="71" type="stmt" count="1"/>
+        <line num="73" type="stmt" count="2"/>
+        <line num="75" type="stmt" count="2"/>
+        <line num="76" type="stmt" count="2"/>
+        <line num="77" type="stmt" count="2"/>
+        <line num="78" type="stmt" count="2"/>
+        <line num="79" type="stmt" count="1"/>
+        <line num="80" type="stmt" count="2"/>
+        <line num="82" type="stmt" count="2"/>
+        <line num="85" type="method" name="delete" visibility="public" complexity="2" crap="2.15" count="1"/>
+        <line num="86" type="stmt" count="1"/>
+        <line num="87" type="stmt" count="1"/>
+        <line num="88" type="stmt" count="0"/>
+        <line num="91" type="method" name="showAllTrashedUsers" visibility="public" complexity="2" crap="2" count="1"/>
+        <line num="92" type="stmt" count="1"/>
+        <line num="93" type="stmt" count="1"/>
+        <line num="94" type="stmt" count="1"/>
+        <metrics loc="95" ncloc="91" classes="1" methods="7" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="37" coveredstatements="35" elements="44" coveredelements="40"/>
+      </file>
+    </package>
+    <package name="App\Http\Middleware">
+      <file name="/Users/raldney/Projetos/users/app/Http/Middleware/Authenticate.php">
+        <class name="App\Http\Middleware\Authenticate" namespace="App\Http\Middleware">
+          <metrics complexity="3" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
+        </class>
+        <line num="23" type="method" name="__construct" visibility="public" complexity="1" crap="2.00" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="36" type="method" name="handle" visibility="public" complexity="2" crap="6.00" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="0"/>
+        <metrics loc="44" ncloc="25" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
+      </file>
+      <file name="/Users/raldney/Projetos/users/app/Http/Middleware/ExampleMiddleware.php">
+        <class name="App\Http\Middleware\ExampleMiddleware" namespace="App\Http\Middleware">
+          <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+        </class>
+        <line num="16" type="method" name="handle" visibility="public" complexity="1" crap="2.00" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <metrics loc="20" ncloc="13" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Jobs">
+      <file name="/Users/raldney/Projetos/users/app/Jobs/ExampleJob.php">
+        <class name="App\Jobs\ExampleJob" namespace="App\Jobs">
+          <metrics complexity="2" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="26" ncloc="12" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/Users/raldney/Projetos/users/app/Jobs/Job.php">
+        <class name="App\Jobs\Job" namespace="App\Jobs">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="24" ncloc="14" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Listeners">
+      <file name="/Users/raldney/Projetos/users/app/Listeners/ExampleListener.php">
+        <class name="App\Listeners\ExampleListener" namespace="App\Listeners">
+          <metrics complexity="2" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="31" ncloc="16" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Providers">
+      <file name="/Users/raldney/Projetos/users/app/Providers/AppServiceProvider.php">
+        <class name="App\Providers\AppServiceProvider" namespace="App\Providers">
+          <metrics complexity="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="18" ncloc="11" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="/Users/raldney/Projetos/users/app/Providers/AuthServiceProvider.php">
+        <class name="App\Providers\AuthServiceProvider" namespace="App\Providers">
+          <metrics complexity="3" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="26" type="method" name="boot" visibility="public" complexity="2" crap="6.00" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <metrics loc="39" ncloc="19" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+      <file name="/Users/raldney/Projetos/users/app/Providers/EventServiceProvider.php">
+        <class name="App\Providers\EventServiceProvider" namespace="App\Providers">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="19" ncloc="14" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App">
+      <file name="/Users/raldney/Projetos/users/app/User.php">
+        <class name="App\User" namespace="App">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="33" ncloc="23" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="15" loc="464" ncloc="309" classes="5" methods="13" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="47" coveredstatements="35" elements="60" coveredelements="40"/>
+  </project>
+</coverage>
