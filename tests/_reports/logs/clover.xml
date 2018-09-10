@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1536607092">
-  <project timestamp="1536607092">
+<coverage generated="1536607199">
+  <project timestamp="1536607199">
     <package name="App\Console">
       <file name="/Users/raldney/Projetos/users/app/Console/Kernel.php">
         <class name="App\Console\Kernel" namespace="App\Console">
@@ -44,7 +44,7 @@
       </file>
       <file name="/Users/raldney/Projetos/users/app/Http/Controllers/V1/UserController.php">
         <class name="App\Http\Controllers\V1\UserController" namespace="App\Http\Controllers\V1">
-          <metrics complexity="15" methods="7" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="37" coveredstatements="36" elements="44" coveredelements="42"/>
+          <metrics complexity="15" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="37" coveredstatements="37" elements="44" coveredelements="44"/>
         </class>
         <line num="13" type="method" name="showAllUsers" visibility="public" complexity="2" crap="2" count="1"/>
         <line num="14" type="stmt" count="1"/>
@@ -82,15 +82,15 @@
         <line num="79" type="stmt" count="1"/>
         <line num="80" type="stmt" count="2"/>
         <line num="82" type="stmt" count="2"/>
-        <line num="85" type="method" name="delete" visibility="public" complexity="2" crap="2.15" count="1"/>
-        <line num="86" type="stmt" count="1"/>
+        <line num="85" type="method" name="delete" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="86" type="stmt" count="2"/>
         <line num="87" type="stmt" count="1"/>
-        <line num="88" type="stmt" count="0"/>
+        <line num="88" type="stmt" count="1"/>
         <line num="91" type="method" name="showAllTrashedUsers" visibility="public" complexity="2" crap="2" count="1"/>
         <line num="92" type="stmt" count="1"/>
         <line num="93" type="stmt" count="1"/>
         <line num="94" type="stmt" count="1"/>
-        <metrics loc="95" ncloc="91" classes="1" methods="7" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="37" coveredstatements="36" elements="44" coveredelements="42"/>
+        <metrics loc="95" ncloc="91" classes="1" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="37" coveredstatements="37" elements="44" coveredelements="44"/>
       </file>
     </package>
     <package name="App\Http\Middleware">
@@ -169,6 +169,6 @@
         <metrics loc="33" ncloc="23" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
     </package>
-    <metrics files="15" loc="465" ncloc="310" classes="5" methods="13" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="47" coveredstatements="36" elements="60" coveredelements="42"/>
+    <metrics files="15" loc="465" ncloc="310" classes="5" methods="13" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="47" coveredstatements="37" elements="60" coveredelements="44"/>
   </project>
 </coverage>

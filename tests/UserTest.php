@@ -128,6 +128,13 @@ class UserTest extends TestCase
         $this->assertEquals("Deleted Successfully",$this->response->content());
     }
 
+    public function testDeleteUserFail(){
+        
+        $this->delete('/api/v'.getenv('APP_VERSION').'/users/n');
+        $this->assertEquals(401, $this->response->status());
+        $this->assertEquals("Delete error",$this->response->content());
+    }
+
     public function testShowAllTrashedUsers(){
         $this->get('/api/v'.getenv('APP_VERSION').'/users/trashed?limit=10&page=1');
         $this->assertResponseOk();
