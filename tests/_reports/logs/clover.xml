@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1536599509">
-  <project timestamp="1536599509">
+<coverage generated="1536605519">
+  <project timestamp="1536605519">
     <package name="App\Console">
       <file name="/Users/raldney/Projetos/users/app/Console/Kernel.php">
         <class name="App\Console\Kernel" namespace="App\Console">
@@ -142,7 +142,7 @@
         <class name="App\Providers\AppServiceProvider" namespace="App\Providers">
           <metrics complexity="1" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
         </class>
-        <metrics loc="18" ncloc="11" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        <metrics loc="19" ncloc="12" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
       <file name="/Users/raldney/Projetos/users/app/Providers/AuthServiceProvider.php">
         <class name="App\Providers\AuthServiceProvider" namespace="App\Providers">
@@ -169,6 +169,6 @@
         <metrics loc="33" ncloc="23" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </file>
     </package>
-    <metrics files="15" loc="464" ncloc="309" classes="5" methods="13" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="47" coveredstatements="35" elements="60" coveredelements="40"/>
+    <metrics files="15" loc="465" ncloc="310" classes="5" methods="13" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="47" coveredstatements="35" elements="60" coveredelements="40"/>
   </project>
 </coverage>
