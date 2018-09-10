@@ -16,12 +16,13 @@ addons:
     - mysql-server-5.6
     - mysql-client-core-5.6
     - mysql-client-5.6
-before_install:
-- mysql -u root -e 'CREATE DATABASE teste_ingresse;'
+before_script:
+  - cp .env.travis .env
+  - mysql -u root -e 'CREATE DATABASE teste_ingresse;'
 
 install: travis_retry composer install --no-interaction --prefer-source
 
 script: 
-  - php artisan migrate
-  - php artisan db:seed
-  - phpvendor/bin/phpunit
+  - ./artisan migrate
+  - ./artisan db:seed
+  - vendor/bin/phpunit
