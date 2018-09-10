@@ -27,6 +27,8 @@ $app->withFacades();
 
 $app->withEloquent();
 
+$app->register('Illuminate\Redis\RedisServiceProvider');
+
 /*
 |--------------------------------------------------------------------------
 | Register Container Bindings
