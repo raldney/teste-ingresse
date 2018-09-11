@@ -2,8 +2,11 @@ version: '3'
 services:
     web:
         build: .
+        container_name: app
         ports:
             - "8000:80"
+            - "3000:443"
+        restart: on-failure
         links:
             - redis
         environment:
@@ -15,11 +18,14 @@ services:
             - redis
             - mysqldb
             - myadmin 
-        command: ["./scripts/wait-for-mysql.sh","--","./scripts/run.sh"]
+        command: ["./scripts/run.sh"]
+        tty: true
     redis:
+        container_name: redis
         image: redis:alpine
         ports:
             - "6379"
+        tty: true
         
     myadmin:
         image: phpmyadmin/phpmyadmin
@@ -32,6 +38,7 @@ services:
         restart: always
         depends_on:
             - mysqldb
+        tty: true
     mysqldb:
         image: mysql:${MYSQL_VERSION}
         container_name: ${MYSQL_HOST}
@@ -47,3 +54,4 @@ services:
             - "8989:3306"
         volumes:
             - "./data/db/mysql:/var/lib/mysql"
+        tty: true
