@@ -5,20 +5,17 @@ services:
         container_name: app
         ports:
             - "8000:80"
-            - "3000:443"
         restart: on-failure
         links:
             - redis
         environment:
             - REDIS_URL=redis://cache
             - MYSQL_HOST=${MYSQL_HOST}
-        volumes:
-            - "./web:/var/www/html"
         depends_on:
             - redis
             - mysqldb
             - myadmin 
-        command: ["./scripts/run.sh"]
+        entrypoint: ["./scripts/run.sh"]
         tty: true
     redis:
         container_name: redis

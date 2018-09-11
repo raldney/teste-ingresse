@@ -11,7 +11,7 @@ class UserController extends Controller
 {
 
     public function showAllUsers(Request $request){
-        $currentPage = $request->page;
+        $currentPage = (isset($request->page) ? $request->page : 1);
         $limit = (isset($request->limit) ? $request->limit : 10);
         return response()->json($this->paginated($limit,$currentPage));
     }
@@ -89,7 +89,7 @@ class UserController extends Controller
     }
 
     public function showAllTrashedUsers(Request $request){
-        $currentPage = $request->page;
+        $currentPage = (isset($request->page) ? $request->page : 1);
         $limit = (isset($request->limit) ? $request->limit : 10);
         return response()->json($this->paginated($limit,$currentPage,true));
     }
