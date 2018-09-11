@@ -17,7 +17,7 @@ class UserController extends Controller
     }
 
     public function paginated($limit = 10, $currentPage = 1,$trashed = false){
-        $expiration = 60; //seconds
+        $expiration = 1; //minutes
         $key = "user_" . ($trashed ? 'trashed_' : '') . $currentPage;
         
         if(!Cache::has($key)){
