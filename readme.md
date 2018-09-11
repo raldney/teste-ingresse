@@ -20,6 +20,10 @@ Docker running Ubuntu, Nginx, PHP-FPM, REDIS, MySQL and PHPMyAdmin.
 
     By this point we’ll have all the project pieces in place.
 
+4. [EndPoints](#endpoints)
+
+    User resources
+
 ## Install prerequisites
 
 For now, this project has been mainly created for Unix `(Linux/MacOS)`. Perhaps it could work on Windows.
@@ -101,4 +105,175 @@ ___
     ```
 
 ___
+
+
+## EndPoints
+
+### EndPoint - GET Users
+	GET /users
+
+#### Description
+	Return all users
+#### Parameters
+- **limit**  — Users per page.
+- **page**  — Number of page.
+
+#### Example
+	GET /api/v1/users?limit=10&page=1
+**Result**
+``` json
+[
+	{
+		"id":1,
+		"name":"admin",
+		"email":"admin@admin.com",
+		"created_at":"2018-09-11 01:38:37",
+		"updated_at":"2018-09-11 01:38:37",
+		"deleted_at":null
+	}
+]
+
+```
+___
+
+
+### EndPoint - GET User
+	GET /user/{id}
+
+#### Description
+	Return a user
+
+#### Example
+	GET /api/v1/users/1
+**Result**
+``` json
+[
+	{
+		"id":1,
+		"name":"admin",
+		"email":"admin@admin.com",
+		"created_at":"2018-09-11 01:38:37",
+		"updated_at":"2018-09-11 01:38:37",
+		"deleted_at":null
+	}
+]
+```
+___ 
+
+### EndPoint - GET User trashed
+	GET /users/trashed
+
+#### Description
+	Return all users that was deleted
+	
+#### Parameters
+- **limit**  — Users per page.
+- **page**  — Number of page.
+
+#### Example
+	GET /api/v1/users/trashed?limit=10&page=1
+**Result**
+``` json
+[
+	{
+		"id":1,
+		"name":"admin",
+		"email":"admin@admin.com",
+		"created_at":"2018-09-11 01:38:37",
+		"updated_at":"2018-09-11 01:38:37",
+		"deleted_at":"2018-09-11 05:38:37"
+	}
+]
+```
+___
+
+
+### EndPoint - POST User
+	POST /users
+
+#### Description
+	Create a user
+	
+#### Parameters
+	All parameters should be pass by body in json format
+- **name** (required) — Name of user.
+- **email** (required | unique) — E-mail.
+- **password** (required) — password.
+- **password_confirmation** (required) — Confirmation password.
+
+#### Example
+	POST /api/v1/users
+**Result**
+``` json
+[
+	{
+		"name": "raldney",
+		"email": "raldney.alves@gmail.com3",
+		"updated_at": "2018-09-10 15:35:20",
+		"created_at": "2018-09-10 15:35:20",
+		"id": 33
+	}
+]
+```
+___
+
+
+### EndPoint - PUT User
+	PUT /users/{id}
+
+#### Description
+	Update a user
+	
+#### Parameters
+	All parameters should be pass by body in json format
+- **name** (required) — Name of user.
+- **email** (required | unique) — E-mail.
+
+	Send password confirmation when you want to update
+	
+- **password** (required) — password.
+- **password_confirmation** (required) — Confirmation password.
+
+#### Example
+	PUT /api/v1/users/33?name=raldney&email=raldney.alves@gmail.com5
+**Result**
+``` json
+[
+	{
+		"name": "raldney",
+		"email": "raldney.alves@gmail.com5",
+		"updated_at": "2018-09-10 15:50:20",
+		"created_at": "2018-09-10 15:35:20",
+		"id": 33
+	}
+]
+```
+___
+
+### EndPoint - Delete User
+	Delete /users/{id}
+
+#### Description
+	Delete a user
+
+## Errors
+All known errors cause the resource to return HTTP error code header together with a JSON array containing at least 'status' and 'error' keys describing the source of error.
+
+- **401 Unauthorized** — The specified user was not found.
+
+#### Example
+	DELETE /api/v1/users/33
+**Result**
+``` json
+[
+	{
+		"name": "raldney",
+		"email": "raldney.alves@gmail.com5",
+		"updated_at": "2018-09-10 15:50:20",
+		"created_at": "2018-09-10 15:35:20",
+		"deleted_at": "2018-09-10 15:55:20",
+		"id": 33
+	}
+]
+```
 
