@@ -42,7 +42,6 @@ RUN ln -sf /dev/stderr /var/log/nginx/error.log
 VOLUME ["/var/cache/nginx"]
 RUN rm /etc/nginx/sites-available/default
 ADD ./default /etc/nginx/sites-available/default
-ADD ./env /var/www/html
 
 # COMPOSER
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
