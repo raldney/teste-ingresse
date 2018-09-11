@@ -15,7 +15,7 @@ addons:
     - mysql-client-core-5.6
     - mysql-client-5.6
 before_install:
-  - cp .env.travis .env
+  - cp .env.travis web/.env
   - mysql -u root -e 'CREATE DATABASE teste_ingresse;'
   - cd web/
 
