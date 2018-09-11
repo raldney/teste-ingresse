@@ -112,6 +112,7 @@ ___
 
 
 ## EndPoints
+	PATH /api/v1
 
 ### EndPoint - GET Users
 	GET /users
