@@ -97,6 +97,10 @@ ___
 
     * [http://localhost:8000](http://localhost:8000/)
     * [http://localhost:8080](http://localhost:8080/) PHPMyAdmin (host: mysql, username: root, password: )
+    
+    OR 
+    * [http://0.0.0.0:8000](http://0.0.0.0:8000/)
+    * [http://0.0.0.0:8080](http://0.0.0.0:8080/) PHPMyAdmin (host: mysql, username: root, password: )
 
 4. Stop and clear services
 
@@ -236,6 +240,8 @@ ___
 
 #### Example
 	PUT /api/v1/users/33?name=raldney&email=raldney.alves@gmail.com5
+	OR
+	PUT /api/v1/users/33 (Parameters by body)
 **Result**
 ``` json
 [
